@@ -14,28 +14,23 @@ Handwritten digits (28x28 grayscale images) with 10 classes (0–9)
 Automatically loaded from Keras:
 
 # How to Run
-1. Clone the repository
-In terminal, type 
-" git clone https://github.com/yourusername/handwritten-digit-recognition.git " 
+1. Clone the repository.<br>
+In terminal, type <br>
+" git clone https://github.com/yourusername/handwritten-digit-recognition.git " <br>
 " cd handwritten-digit-recognition "
-2. Install requirements
-pip install tensorflow
+2. Install requirements<br>
+<t>pip install tensorflow
 3. Run the project
-In terminal, type 
-" python digit_recognition.py "
 
 
 # Model Architecture
 
-Input Layer: 28x28 grayscale image
-↓
-Scaled 
-↓
-Flatten
-↓
-Dense (100) + ReLU
-↓
-Dense (10) + sigmoid
+1. The input layer consist 28 * 28 neurons, a 28*28 grayscale image.
+2. The model is scaled for better efficiency. 
+3. The inputs are flattened to get a 1-D data.
+4. Dense (Fully Connected) layer with 100 units, activation='relu'
+5. Output Dense layer with 10 units, activation='sigmoid'
+
 
 # Results
 The model is trained at an accuracy  with 99.85%
